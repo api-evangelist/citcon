@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.citcon.com/dev/universal-payment-interface-upi---api
+summary:
+  types: [http]
+  http_scheme: bearer
+  token_model: access-token
+description: >-
+  The Citcon UPI API authenticates with a Bearer access token passed in the
+  Authorization header. An access token is generated from your Citcon private
+  key by POSTing to /v1/access-tokens and is then supplied on every subsequent
+  request. Tokens carry a permissions array scoping which operations they may
+  perform.
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: 'Authorization: Bearer {access-token}'
+  source: https://www.citcon.com/dev/universal-payment-interface-upi---api
+token:
+  issue_endpoint: POST /v1/access-tokens
+  generated_from: private-key
+  default_expiry: 24h
+  expiry_signal: HTTP 401 Unauthorized
+  token_types: [client, server]
+  permissions:
+  - charge
+  - inquiry
+  - capture
+  - vault
+  - consult
+  - encryption-config
+  - refund
+notes: >-
+  Token permissions function as coarse operation scopes but are not OAuth 2.0
+  scopes; there is no OAuth authorization-code/client-credentials flow, so no
+  scopes/ artifact is emitted.
