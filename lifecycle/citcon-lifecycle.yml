@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source:
+- https://www.citcon.com/dev/universal-payment-interface-upi---api
+- https://www.citcon.com/dev/overview
+api: Citcon Universal Payment Interface (UPI) API
+versioning:
+  scheme: uri-path
+  current: v1
+  base_path: /v1/
+  detail: >-
+    The current generation is the Universal Payment Interface (UPI) API served
+    under /v1/. Citcon also documents legacy generations (Online API (legacy)
+    and CHOP (legacy)), indicating UPI supersedes them.
+status_page: https://status.citconpay.com
+legacy_generations:
+- name: Online API (legacy)
+  url: https://www.citcon.com/dev/online-api-legacy
+- name: CHOP (legacy)
+  url: https://www.citcon.com/dev/chop
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: >-
+    No formal machine-readable deprecation policy (RFC 8594 Sunset/Deprecation
+    headers) was found published; legacy API generations are labeled "legacy"
+    in the developer docs.
+sla:
+  url: null

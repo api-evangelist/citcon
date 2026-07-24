@@ -1,0 +1,40 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.citcon.com/dev/universal-payment-interface-upi---api
+format: custom
+api: Citcon Universal Payment Interface (UPI) API
+envelope:
+  description: >-
+    Errors are returned with an overall status of "fail" and a data object
+    carrying a numeric string "code" and a human-readable "message". This is a
+    custom envelope (not RFC 9457 application/problem+json).
+  shape: |
+    {
+      "status": "fail",
+      "app": "citcon_upi",
+      "version": "v1.0.0",
+      "data": { "code": "4100", "message": "duplicate request" }
+    }
+problems:
+- code: '4100'
+  title: Duplicate request
+  message: duplicate request
+  meaning: >-
+    A request reused a reference identifier already seen for this merchant.
+    Retry with a new unique reference.
+- code: '4010'
+  title: Unauthorized
+  message: unauthorized
+  meaning: >-
+    The access token is missing, invalid, or expired (also surfaced as HTTP 401).
+    Re-issue an access token via POST /v1/access-tokens.
+- code: '4208'
+  title: Transaction ineligible for partial refund
+  message: transaction ineligible for partial refund
+  meaning: >-
+    A partial refund was requested against a transaction that does not support
+    partial refunds.
+notes: >-
+  Additional codes exist in Citcon's documentation; the above are the codes
+  published verbatim on the UPI API reference. No dedicated card decline-code
+  reference is published, so no decline-codes artifact is emitted.

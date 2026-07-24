@@ -1,0 +1,46 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.citcon.com/dev/universal-payment-interface-upi---api
+api: Citcon Universal Payment Interface (UPI) API
+authentication:
+  style: bearer-token
+  header: Authorization
+  detail: authentication/citcon-authentication.yml
+idempotency:
+  supported: true
+  mechanism: client-supplied unique reference identifiers
+  detail: >-
+    Every money-moving request carries a merchant-supplied unique reference.
+    Citcon rejects duplicates: "duplicate reference numbers will result in the
+    transaction being rejected" (error code 4100, "duplicate request"). Charge,
+    capture, and refund each require a reference that is unique within the
+    merchant account; a capture reference must differ from the original charge
+    reference; a refund reference must be unique within the merchant account.
+  fields:
+  - reference        # charge: unique per merchant
+  - capture reference
+  - refund reference
+  duplicate_error_code: '4100'
+request_response:
+  content_type: application/json
+  envelope:
+    status: success | fail
+    app: citcon_upi
+    version: v1.0.0
+    data: object
+versioning:
+  scheme: uri-path
+  current: v1
+  base_path: /v1/
+  detail: lifecycle/citcon-lifecycle.yml
+error_envelope:
+  shape: 'data: { code, message }'
+  detail: errors/citcon-problem-types.yml
+webhooks:
+  style: IPN (instant payment notification)
+  configured_via: request "urls.ipn" callback URL
+  detail: asyncapi/citcon-upi-webhooks.yml
+amounts:
+  unit: smallest currency unit (e.g. cents for USD)
+  currency: ISO 4217
+  country: ISO 3166

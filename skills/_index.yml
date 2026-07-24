@@ -1,0 +1,13 @@
+generated: '2026-07-18'
+method: generated
+source: https://www.citcon.com/dev/universal-payment-interface-upi---api
+skills:
+- file: citcon-charge-and-capture.md
+  name: Charge and capture a payment with Citcon UPI
+  api: Citcon Universal Payment Interface (UPI) API
+  operations:
+  - POST /v1/access-tokens
+  - POST /v1/charges
+  - POST /v1/charges/{charge-token}
+  - POST /v1/captures
+  - GET /v1/transactions/{id}

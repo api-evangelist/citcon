@@ -1,0 +1,36 @@
+generated: '2026-07-18'
+method: searched
+source:
+- https://www.citcon.com/resources/compliance
+- https://www.citcon.com/dev/universal-payment-interface-upi---api
+api: Citcon Universal Payment Interface (UPI) API
+standards:
+- id: pci-dss
+  conforms: true
+  evidence: >-
+    Citcon compliance page states it handles "PCI DSS to cross-border tax
+    rules" so merchants can focus on growth; Citcon operates as a PCI-compliant
+    payment processor.
+- id: oauth2
+  conforms: false
+  evidence: Auth is Bearer access token issued from a private key, not OAuth 2.0.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: >-
+    Errors use a custom { status, data: { code, message } } envelope, not
+    application/problem+json.
+- id: idempotency
+  conforms: true
+  evidence: >-
+    Client-supplied unique reference identifiers are required and duplicates
+    are rejected (error 4100).
+- id: canada-payment-card-code-of-conduct
+  conforms: true
+  evidence: >-
+    Compliance page references the Code of Conduct for the Payment Card
+    Industry in Canada (Financial Consumer Agency of Canada).
+compliance_program:
+  published: true
+  url: https://www.citcon.com/resources/compliance
+  certifications:
+  - PCI DSS

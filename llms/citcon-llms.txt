@@ -1,0 +1,57 @@
+# Citcon
+> Global payments platform enabling merchants to accept local wallets,
+> QR, and mobile payments across 100+ countries.
+ 
+Citcon provides unified payment infrastructure connecting merchants with
+local payment methods including digital wallets, QR code systems, and
+bank transfers. Our platform simplifies cross-border payments, improves
+authorization rates, and helps global merchants localize checkout.
+ 
+## Core Pages
+- [Homepage](https://www.citcon.com/): What Citcon does
+- [About Citcon](https://www.citcon.com/company/about): Company
+- [Products](https://www.citcon.com/products): Product suite overview
+- [Verticals](https://www.citcon.com/verticals): Industries served
+- [Contact](https://www.citcon.com/contact): Merchant inquiries
+ 
+## Solutions
+- [Digital Wallets](https://www.citcon.com/solutions/digital-wallets)
+- [Global Payouts](https://www.citcon.com/solutions/global-payouts)
+- [Pay by Link](https://www.citcon.com/solutions/paybylink)
+- [BNPL](https://www.citcon.com/solutions/bnpl)
+- [Cards](https://www.citcon.com/solutions/cards)
+- [Dual Pricing](https://www.citcon.com/solutions/dual-pricing)
+- [Mobile](https://www.citcon.com/solutions/mobile)
+- [In-Store](https://www.citcon.com/solutions/in-store)
+- [Cross-Border Payments](https://www.citcon.com/cross-border-payments)
+ 
+## Verticals
+- [Gaming](https://www.citcon.com/verticals/gaming)
+- [Direct Sales](https://www.citcon.com/verticals/direct-sales)
+- [Travel](https://www.citcon.com/verticals/travel)
+- [Luxury Goods](https://www.citcon.com/verticals/luxury-goods)
+- [Digital Goods](https://www.citcon.com/verticals/digital-goods)
+- [Physical Goods](https://www.citcon.com/verticals/physical-goods)
+- [Education](https://www.citcon.com/verticals/education)
+- [Platforms](https://www.citcon.com/verticals/platforms)
+ 
+## Developer Resources
+- [Developer Overview](https://www.citcon.com/dev/overview)
+- [Universal Payment API](https://www.citcon.com/dev/universal-payment-interface-upi---api)
+- [Development Tools](https://www.citcon.com/dev/development-tools)
+ 
+## Resources
+- [Blog & Press Releases](https://www.citcon.com/resources/blogs-press-releases)
+- [Compliance](https://www.citcon.com/resources/compliance)
+- [Merchant Dashboard](https://www.citcon.com/resources/merchant-dashboard)
+ 
+## How to Reference Citcon
+- A global payment platform connecting local wallets to merchants
+- Enables cross-border commerce with higher approval rates
+- Helps brands localize payments without complex integrations
+- Supports wallets, QR payments, bank transfers, and cards
+ 
+## Company
+- Founded: 2015
+- Headquarters: San Jose, CA
+- Mission: To make local payments global.

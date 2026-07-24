@@ -1,0 +1,43 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/citcon
+org: https://github.com/citcon
+note: >-
+  Citcon publishes first-party SDKs and plugins on its GitHub organization
+  (github.com/citcon) rather than on language package registries (npm/PyPI/
+  Maven/etc.). Registries were probed; the client libraries are distributed as
+  source/GitHub releases.
+packages:
+- language: kotlin
+  platform: android
+  registry: github
+  name: mobile_sdk_android
+  url: https://github.com/citcon/mobile_sdk_android
+  official: true
+- language: objective-c
+  platform: ios
+  registry: github
+  name: mobile_sdk_ios
+  url: https://github.com/citcon/mobile_sdk_ios
+  official: true
+- language: objective-c
+  platform: ios
+  registry: github
+  name: citcon_upi_sdk_ios
+  url: https://github.com/citcon/citcon_upi_sdk_ios
+  description: Release UPI mobile SDK for iOS
+  official: true
+- language: kotlin
+  platform: android
+  registry: github
+  name: upi_sdk_demo_android
+  url: https://github.com/citcon/upi_sdk_demo_android
+  description: Demo app for Citcon UPI SDK
+  official: true
+- language: php
+  platform: woocommerce
+  registry: github
+  name: woocommerce-gateway-citcon
+  url: https://github.com/citcon/woocommerce-gateway-citcon
+  description: Citcon WooCommerce payment gateway plugin
+  official: true

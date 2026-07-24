@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.citcon.com/dev/universal-payment-interface-upi---api
+type: Webhooks
+api: Citcon Universal Payment Interface (UPI) API
+note: >-
+  Citcon publishes a webhook (IPN — Instant Payment Notification) surface but
+  no AsyncAPI document. Merchants register callback URLs per request; Citcon
+  POSTs transaction status updates to the IPN URL. Redirect URLs (success/fail/
+  cancel/mobile) are browser-return targets, not server webhooks.
+delivery:
+  style: IPN
+  transport: HTTP POST
+  configured_via: request field "urls.ipn"
+  payload: transaction parameters (status, reference, transaction id, amount, etc.)
+callbacks:
+- key: ipn
+  kind: server-webhook
+  description: Server-to-server payment status notification (the true webhook).
+- key: success
+  kind: browser-redirect
+  description: Buyer redirect on successful payment.
+- key: fail
+  kind: browser-redirect
+  description: Buyer redirect on failed payment.
+- key: cancel
+  kind: browser-redirect
+  description: Buyer redirect on cancelled payment.
+- key: mobile
+  kind: browser-redirect
+  description: Mobile return target.

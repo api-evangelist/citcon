@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source:
+- https://www.citcon.com/dev/universal-payment-interface-upi---api
+- https://www.citcon.com/dev/development-tools
+api: Citcon Universal Payment Interface (UPI) API
+environments:
+  sandbox:
+    base_url: https://api.sandbox.citconpay.com
+  production:
+    base_url: https://api.citconpay.com/v1/
+test_cards:
+- brand: Visa
+  number: '4111111111111111'
+  note: US testing
+- brand: American Express
+  number: '378282246310005'
+  note: Mexico testing
+- brand: Union Pay
+  number: '6221558812340014'
+  cvn2: '123'
+  expiry: 11/25
+test_wallet_identifiers:
+- method: alipay
+  value: '299999999999999999'
+- method: wechatpay
+  value: '199999999999999999'
+- method: cup_qr
+  value: hQVDUFY99999999999
+- method: paypal
+  value: sb-8r5km3005826@personal.example.com
+- method: venmo
+  value: QarPartner
+external_test_resources:
+- name: Elavon converge test cards
+  url: https://developer.elavon.com/na/docs/converge/1.0.0/test-cards
+caveats: >-
+  Per Citcon: "These test barcodes are for validating the api connection
+  between merchants/partners and Citcon only and cannot be used for
+  integration certification." Values captured verbatim from Citcon's published
+  developer docs; none are invented.

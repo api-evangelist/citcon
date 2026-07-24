@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: derived
+status: candidate
+source: https://www.citcon.com/dev/universal-payment-interface-upi---api
+note: >-
+  No official hosted/remote Citcon MCP server was found (docs, npm
+  @modelcontextprotocol, MCP registries). This is a CANDIDATE tool list
+  derived from the published UPI API operations to seed a future MCP server.
+server:
+  name: citcon-upi
+  transport: http
+tools:
+- name: issue_access_token
+  description: Generate a Bearer access token from the merchant private key.
+  source_operation: POST /v1/access-tokens
+- name: create_charge
+  description: Initiate a payment charge for a supported payment method.
+  source_operation: POST /v1/charges
+- name: confirm_charge
+  description: Confirm/authorize a charge by charge token.
+  source_operation: POST /v1/charges/{charge-token}
+- name: capture_charge
+  description: Capture a previously authorized transaction.
+  source_operation: POST /v1/captures
+- name: refund_charge
+  description: Refund a captured transaction (full or partial).
+  source_operation: POST /v1/refunds
+- name: cancel_charge
+  description: Cancel an active authorization.
+  source_operation: POST /v1/cancels
+- name: get_transaction
+  description: Inquire the status of a transaction by id.
+  source_operation: GET /v1/transactions/{id}
+- name: manage_vault
+  description: Create, read, or delete tokenized payment methods in the vault.
+  source_operation: GET|POST|DELETE /v1/vault
+- name: consult
+  description: Consult endpoint for pre-transaction checks.
+  source_operation: GET /v1/consults
