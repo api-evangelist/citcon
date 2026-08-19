@@ -2,10 +2,8 @@ generated: '2026-07-18'
 method: derived
 status: candidate
 source: https://www.citcon.com/dev/universal-payment-interface-upi---api
-note: >-
-  No official hosted/remote Citcon MCP server was found (docs, npm
-  @modelcontextprotocol, MCP registries). This is a CANDIDATE tool list
-  derived from the published UPI API operations to seed a future MCP server.
+note: No official hosted/remote Citcon MCP server was found (docs, npm @modelcontextprotocol, MCP registries).
+  This is a CANDIDATE tool list derived from the published UPI API operations to seed a future MCP server.
 server:
   name: citcon-upi
   transport: http
@@ -37,3 +35,9 @@ tools:
 - name: consult
   description: Consult endpoint for pre-transaction checks.
   source_operation: GET /v1/consults
+deployment:
+  mode: none
+  verified: derived
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
