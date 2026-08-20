@@ -41,6 +41,15 @@ tags:
 - Company
 - Payments
 - Cross-Border Payments
+- Digital Wallet
+- Payment Gateway
+- BNPL
+- Global Payouts
+- Fintech
+tags_raw:
+- Company
+- Payments
+- Cross-Border Payments
 - Digital Wallets
 - Payment Gateway
 - BNPL
@@ -58,6 +67,10 @@ apis:
   humanURL: https://www.citcon.com/dev/universal-payment-interface-upi---api
   baseURL: https://api.citconpay.com/v1/
   tags:
+  - Payments
+  - Cross-Border Payments
+  - Digital Wallet
+  tags_raw:
   - Payments
   - Cross-Border Payments
   - Digital Wallets
