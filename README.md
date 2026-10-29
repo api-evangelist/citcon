@@ -64,6 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Citcon is a company surfaced as a portfolio company of norwest-venture-partners, sierra-ventures and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the enrichment pipeline.
+Citcon is a global payment processing platform, founded in 2015 and headquartered in San Jose, California, that unifies 100+ local and global payment methods behind a single Universal Payment Interface (UPI) API. Merchants use Citcon to accept digital wallets (Alipay, WeChat Pay, PayPal, Venmo, CashApp, China UnionPay, Kakao Pay, NaverPay, Line Pay, PayPay and more), cards, and Buy Now Pay Later, plus global payouts, pay-by-link, surcharging, dual pricing, and in-store/POS acceptance across 50+ countries and 10+ settlement currencies. The UPI API is a REST/JSON payments API using Bearer access-token authentication with charge, capture, refund, cancel, vault (tokenization), inquiry, and consult operations, IPN webhooks, and a sandbox environment. Citcon is backed by Norwest Venture Partners and Sierra Ventures.
 
-Backed by: norwest-venture-partners, sierra-ventures — https://citcon.com
+**Areas:** Company · Payments · Cross-Border Payments · Digital Wallet · Payment Gateway · Buy Now Pay Later · Global Payouts · Fintech
+
+## Citcon on APIs.io
+
+Everything profiled for Citcon is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/citcon/](https://apis.io/providers/citcon/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Citcon Universal Payment Interface (UPI) API](https://apis.io/apis/citcon/citcon-universal-payment-interface-upi-api/) — Citcon's UPI is a REST/JSON payments API for accepting 100+ global payment methods. It uses Bearer access-token authentication and exposes charge,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Citcon Upi Webhooks](https://apis.io/asyncapis/citcon/citcon-upi-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [citcon-upi](https://apis.io/servers/citcon/citcon-upi/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Citcon Authentication](https://apis.io/security/citcon/citcon-authentication/)
+- [Citcon Domain Security](https://apis.io/security/citcon/citcon-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://citcon.com)
+- [Documentation](https://www.citcon.com/dev/universal-payment-interface-upi---api)
+- [Getting started](https://www.citcon.com/dev/overview)
+- [API reference](https://www.citcon.com/dev/universal-payment-interface-upi---api)
+- [Sign up](https://www.citcon.com/contact)
+- [Support](https://www.citcon.com/contact)
+- [Blog](https://www.citcon.com/resources/blogs-press-releases)
+- [Compliance](https://www.citcon.com/resources/compliance)
+- [Terms of service](https://www.citcon.com/terms-conditions)
+- [Privacy policy](https://www.citcon.com/privacy-policy)
+- [GitHub](https://github.com/citcon)
+- [Status](https://status.citconpay.com)
+
+## API Evangelist rating
+
+**Kin Score 47.9** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 73.2 |
+| Access clarity | 42.1 |
+
+**Agent readiness 26.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | documented (partial credit) |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 33.9** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/citcon/](https://apis.io/providers/citcon/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Citcon: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/citcon/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
